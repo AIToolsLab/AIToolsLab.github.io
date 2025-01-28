@@ -3,3 +3,9 @@ title: "Thoughtful AI Tools Lab"
 ---
 
 We are a research group at Calvin University focused on how AI can help people think better.
+
+Contributing to a flourishing world requires thought.
+
+We build AI tools to support sustained goal-directed cognitive effort despite unclear goals and complex situations.
+
+
