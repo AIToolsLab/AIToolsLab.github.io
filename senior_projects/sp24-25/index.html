@@ -6,9 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="dcterms.date" content="2024-10-25">
+<meta name="dcterms.date" content="2025-05-08">
 
-<title>Promoting End-to-End Intentionality with Large Language Models – Thoughtful AI Tools Lab</title>
+<title>AI for Writers 2024-2025 – Thoughtful AI Tools Lab</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -71,6 +71,7 @@ ul.task-list li input[type="checkbox"] {
 
 
 <link rel="stylesheet" href="../../styles.css">
+<link rel="stylesheet" href="styles.css">
 </head>
 
 <body class="nav-fixed quarto-light">
@@ -127,7 +128,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Promoting End-to-End Intentionality with Large Language Models</h1>
+<h1 class="title">AI for Writers 2024-2025</h1>
   <div class="quarto-categories">
     <div class="quarto-category">HCI</div>
     <div class="quarto-category">NLP</div>
@@ -144,8 +145,6 @@ ul.task-list li input[type="checkbox"] {
     <div class="quarto-title-meta-contents">
              <p>Jason Chew </p>
              <p>Daniel Kim </p>
-             <p>Jiho Kim </p>
-             <p>Ray Flanagan </p>
              <p>Kenneth C. Arnold </p>
           </div>
   </div>
@@ -153,7 +152,7 @@ ul.task-list li input[type="checkbox"] {
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">October 25, 2024</p>
+      <p class="date">May 8, 2025</p>
     </div>
   </div>
   
@@ -165,10 +164,204 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p><img src="featured.png" class="img-fluid"></p>
-<p><a href="poster-summer2024.pdf">Poster</a> presented at 2024 Calvin University Summer Research Poster Fair.</p>
-<p>In Summer 2024, our team of undergraduate students conducted a study on how the type of information suggested by an AI writing assistant affects writers’ cognitive engagement with the suggestion and how they appropriate that suggestion in their draft. We developed a Microsoft Word sidebar that offered next-sentence suggestions expressed in four different ways: in addition to predictive-text-style examples they could use verbatim (e.g., by copy-and-paste), we also allowed writers to request questions that the next sentence might answer, vocabulary they might use, and rhetorical moves (such as giving examples or considering counterarguments) that their next sentence might engage with.</p>
-<p>In a pilot study (N=8), writers found questions and rhetorical moves to be useful and friendly. Although writers chose to request examples more often, they often rejected the suggested text. Overall, they rated the Questions suggestion type as most compelling in post-task surveys, followed by Examples. These preliminary results suggest that writers welcomed AI suggestions that could not be inserted verbatim into their documents but instead required further thought. Overall, by offering intentionally-incomplete suggestions like Questions or Rhetorical Moves, AI systems might become better cognitive partners for writers, enriching thinking rather than circumventing it. This work has been presented at an internal poster fair; we are designing a follow-up experiment to build on these findings for broader publication.</p>
+
+
+
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="./assets/logo_black.png">
+
+  
+    <article id="main-article">
+      <section class="article-section">
+        <h2 class="anchored">Vision</h2>
+        <div class="flexrow vision-container">
+          <div>
+            <p>
+              Under the guidance of Dr. Ken Arnold, the Thoughtful AI lab conducts research into applications of large language models (LLMs)
+              which enhance—but do not replace—the users’ writing. Our lab focuses on two categories of these applications: AI-generated
+              feedback for the revision stage of writing and AI-generated recommendations for the drafting stage of writing.
+            </p>
+            <p>
+              From 2023-2024, we developed a Microsoft Word add-in whose AI-generated suggestions were primed for modification and personalization,
+              facilitating more fine-grained involvement in the writing process. This year, we aim to further this work in four ways:
+              publishing an analysis of prior user studies on our system, utilizing the report’s findings to improve user experience, designing a
+              longitudinal study with the improved system, and integrating revision/drafting features into a single app published on the Microsoft
+              Store.
+            </p>
+            <small>For more context on our project, you can read our original project proposal
+              <a href="https://docs.google.com/document/d/1GRvUEJCl-vIJSgVMcpaj9J5lc-9hctZybwQeY807DjU/edit?usp=sharing" target="_blank" ref="noopener noreferrer">here</a>.
+            </small>
+          </div>
+        </div>
+        <div class="desc-text" style="margin-top: 1.6rem;">
+          <p>
+            Research question we aim to address in this project:
+          </p>
+          <ul>
+            <li class="question-desc">
+              <strong>How might writers’ interactions with each of the suggestion types emulate each stage of the writing process?</strong>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="article-section">
+        <h2 class="anchored">Approaches</h2>
+        <div>
+          <div>
+            <p>
+              We developed a Microsoft Word add-in that offered next-sentence suggestions expressed in four different
+              ways:
+            </p>
+            <ul>
+              <li class="gtype-desc"><strong>Completion of a current thought:</strong> provides a single pre-written
+                sentence</li>
+              <li class="gtype-desc"><strong>A question about current/future writing:</strong> a question the writer could
+                answer in the next sentence</li>
+              <li class="gtype-desc"><strong>A list of possible vocabulary:</strong> vocabulary to use in the next sentence</li>
+              <li class="gtype-desc"><strong>A rhetorical strategy to employ:</strong> directions on the kind of sentence
+                to write, such as citing statistics, offering a personal anecdote, incorporating a counterargument, etc.</li>
+            </ul>
+          </div>
+          <div class="gtype-img-container">
+            <img class="gtype-img" src="./assets/Gtype_2024UI.png" alt="Generation Types" title="Four generation types">
+          </div>
+        </div>
+      </section>
+
+      <section class="article-section">
+        <h2 class="anchored">Demo</h2>
+        <div class="previous-works">
+          <img class="demo-img" src="./assets/word_demo.png" alt="Demo of the Microsoft Word add-in" title="Demo of the Microsoft Word add-in">
+          <div><a class="demo-button" href="https://app.thoughtful-ai.com/">Try it yourself!</a></div>
+        </div>
+      </section>
+
+      <section class="article-section">
+        <h2 class="anchored">Outcomes</h2>
+          <div class="desc-text">
+            <div class="desc-text">
+          <p>On the <strong>research</strong> end, we found from the user study: </p>
+            <ul class="flexcol">
+              <li class="question-desc">Tension between expedience and preserving ownership</li>
+              <li class="question-desc">Preference for ideational assistance over AI-generated verbiage</li>
+              <li class="question-desc">Questions have potential as topic sentences</li>
+            </ul>
+          </div>
+          <div class="desc-text">
+            <p>On the <strong>development</strong> end, we accomplished: </p>
+            <ul class="flexcol">
+              <li class="question-desc">Published application to
+                <a href="https://appsource.microsoft.com/en-us/product/office/WA200008131?tab=Overview" target="_blank" rel="noopener noreferrer">Microsoft Store</a>
+              </li>
+              <li class="question-desc">Rebuilt/optimized internal functions for better performance and scalability for future integrations</li>
+              <li class="question-desc">Created a separate
+                <a href="https://app.thoughtful-ai.com/editor.html" target="_blank" rel="noopener noreferrer">custom editor</a>
+                with identical functionality</li>
+            </ul>
+          </div>
+          <small>The full report of our findings can be found
+            <a href="#" target="_blank" ref="noopener noreferrer">here</a>.
+          </small>
+        </div>
+      </section>
+
+      <section class="article-section">
+        <h2 class="anchored">Future Works</h2>
+        <div class="desc-text">
+        <p>On the <strong>research</strong> end, we plan to: </p>
+          <ul class="flexcol">
+            <li class="question-desc">Finalize a follow-up study for next generation students</li>
+            <li class="question-desc">Debrief with the development team on opportunities for additional functionality or affordances</li>
+          </ul>
+        </div>
+        <div class="desc-text">
+          <p>On the <strong>development</strong> end, we plan to: </p>
+          <ul class="flexcol">
+            <li class="question-desc">Improve system robustness</li>
+            <li class="question-desc">Improve UI/UX in collaboration with the research team</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="article-section flex">
+        <h2 class="anchored">Our Team</h2>
+        <div class="members-container">
+          <div class="member">
+            <div class="name-img">
+              <img class="member-img" src="https://avatars.githubusercontent.com/u/107449866" alt="Jason Chew">
+              <a href="https://github.com/Geesing" target="_blank" ref="noopener noreferrer"><h3 class="anchored">Jason Chew</h3></a>
+            </div>
+            <p class="profile-desc">Whether it be in code or in composition, Jason enjoys applying his syntactical skills across
+              a variety of domains—a trait which has made him particularly interested in the intersection of AI and writing.</p>
+          </div>
+          <div class="member">
+            <div class="name-img">
+              <img class="member-img" src="https://avatars.githubusercontent.com/u/95011871" alt="Daniel Kim">
+              <a href="https://github.com/Cobblestone5517" target="_blank" ref="noopener noreferrer"><h3 class="anchored">Daniel Kim</h3></a>
+            </div>
+            <p class="profile-desc">Daniel is passionate about human-computer interaction and designing intuitive user interfaces.
+              Amidst the widespread proliferation of AI technologies, Daniel aims to develop AI-powered tools
+              that are both useful and user-friendly.</p>
+          </div>
+          <div class="member">
+            <div class="name-img">
+              <img class="member-img" src="https://avatars.githubusercontent.com/u/21072" alt="Kenneth C. Arnold">
+              <a href="https://github.com/kcarnold" target="_blank" ref="noopener noreferrer"><h3 class="anchored">Dr. Kenneth C. Arnold</h3></a>
+            </div>
+            <p class="profile-desc">Advisor for the Thoughtful AI Lab and its associated senior projects at Calvin University.</p>
+          </div>
+          <div class="member border-light">
+            <div class="name-img">
+              <img class="member-img lowop text-light" src="https://avatars.githubusercontent.com/u/55632840" alt="Jiho Kim">
+              <a href="https://github.com/nghtctrl" target="_blank" ref="noopener noreferrer"><h3 class="text-light anchored">Jiho Kim</h3></a>
+            </div>
+            <p class="profile-desc desc-text-light">Associate researcher.</p>
+          </div>
+          <div class="member border-light">
+            <div class="name-img">
+              <img class="member-img lowop" src="https://avatars.githubusercontent.com/u/70855644" alt="Ray Flanagan">
+              <a href="https://github.com/RayHCai" target="_blank" ref="noopener noreferrer"><h3 class="text-light anchored">Ray Flanagan</h3></a>
+            </div>
+            <p class="profile-desc desc-text-light">Associate researcher and developer.</p>
+          </div>
+          <div class="member border-light">
+            <div class="name-img">
+              <img class="member-img lowop" src="https://avatars.githubusercontent.com/u/113206924" alt="Daniel Kwon">
+              <a href="https://github.com/hk238" target="_blank" ref="noopener noreferrer"><h3 class="text-light anchored">Daniel Kwon</h3></a>
+            </div>
+            <p class="profile-desc desc-text-light">Associate developer.</p>
+          </div>
+          <div class="member border-light">
+            <div class="name-img">
+              <img class="member-img lowop" src="https://avatars.githubusercontent.com/u/122395833" alt="Hannah Yoo">
+              <a href="https://github.com/joohayoo" target="_blank" ref="noopener noreferrer"><h3 class="text-light anchored">Hannah Yoo</h3></a>
+            </div>
+            <p class="profile-desc desc-text-light">Associate researcher and developer.</p>
+          </div>
+        </div>
+      </section>
+    </article>
+
+    <footer>
+      <div class="footer-content">
+        <div class="footer-text">
+          <p>© 2024-2025 Arnold Lab</p>
+          <div class="icon-links-container">
+            <a href="https://github.com/AIToolsLab/writing-tools" target="_blank" rel="noopener noreferrer"><img class="ghicon" src="./assets/github-mark.png" alt="GitHub" height="16px"></a>
+            <a href="https://docs.google.com/presentation/d/1bXH1PrEU29rzWtMBSW6MCWIvc5Hk2kFb7XeLC5J4GSE/edit?usp=sharing" target="_blank" rel="noopener noreferrer"><img class="ghicon" src="./assets/slides.svg" alt="Slides" height="16px"></a>
+            <a href="https://calvin.edu/academics/school-stem/computer-science" target="_blank" rel="noopener noreferrer"><img class="ghicon" src="./assets/calvin-logo.webp" alt="Calvin University" height="16px"></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  
+
+  
+
 
 
 

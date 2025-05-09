@@ -1,5 +1,11 @@
 [
   {
+    "listing": "/senior_projects.html",
+    "items": [
+      "/senior_projects/sp24-25/index.html"
+    ]
+  },
+  {
     "listing": "/pubs.html",
     "items": [
       "/pubs/cognitive-engagement/index.html",
