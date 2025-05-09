@@ -35,11 +35,10 @@ categories: ["HCI", "NLP", "Undergrad"]
               feedback for the revision stage of writing and AI-generated recommendations for the drafting stage of writing.
             </p>
             <p>
-              From 2023-2024, we developed a Microsoft Word add-in whose AI-generated suggestions were primed for modification and personalization,
-              facilitating more fine-grained involvement in the writing process. This year, we aim to further this work in four ways:
-              publishing an analysis of prior user studies on our system, utilizing the report’s findings to improve user experience, designing a
-              longitudinal study with the improved system, and integrating revision/drafting features into a single app published on the Microsoft
-              Store.
+              From 2023-2025, we developed a Microsoft Word add-in to generate next-sentence suggestions at varying levels of semantic completeness.
+              These suggestions were designed to correspond to multiple stages and substages of composition, thus facilitating engagement with the writing process at multiple levels.
+              A user study with N=9 participants revealed that the single-sentence scale of the add-in's suggestions contributed to a more natural, recursive writing workflow.
+              We have since deployed the add-in to the Microsoft Store, where it is available for all students and faculty at Calvin University to test.
             </p>
             <small>For more context on our project, you can read our original project proposal
               <a href="https://docs.google.com/document/d/1GRvUEJCl-vIJSgVMcpaj9J5lc-9hctZybwQeY807DjU/edit?usp=sharing"
@@ -50,11 +49,11 @@ categories: ["HCI", "NLP", "Undergrad"]
         </div>
         <div class="desc-text" style="margin-top: 1.6rem;">
           <p>
-            Research question we aim to address in this project:
+            Our primary research question:
           </p>
           <ul>
             <li class="question-desc">
-              <strong>How might writers’ interactions with each of the suggestion types emulate each stage of the writing process?</strong>
+              <strong>How might writers’ interactions with each of our suggestion types emulate the various stages of the writing process?</strong>
             </li>
           </ul>
         </div>
@@ -65,8 +64,7 @@ categories: ["HCI", "NLP", "Undergrad"]
         <div>
           <div>
             <p>
-              We developed a Microsoft Word add-in that offered next-sentence suggestions expressed in four different
-              ways:
+              Our Microsoft Word add-in offers next-sentence suggestions in four forms:
             </p>
             <ul>
               <li class="gtype-desc"><strong>Completion of a current thought:</strong> provides a single pre-written
@@ -96,27 +94,27 @@ categories: ["HCI", "NLP", "Undergrad"]
         <h2>Outcomes</h2>
           <div class="desc-text">
             <div class="desc-text">
-          <p>On the <strong>research</strong> end, we found from the user study: </p>
+          <p>Our <strong>research</strong> led us to the following conclusions: </p>
             <ul class="flexcol">
-              <li class="question-desc">Tension between expedience and preserving ownership</li>
-              <li class="question-desc">Preference for ideational assistance over AI-generated verbiage</li>
-              <li class="question-desc">Questions have potential as topic sentences</li>
+              <li class="question-desc">The single-sentence scale of the add-in's suggestions contributed to heightened engagement with the writing process</li>
+              <li class="question-desc">Writers prefer higher-order, conceptual suggestions over assistance with word-for-word articulation</li>
+              <li class="question-desc">Question-type suggestions have the potential to provide higher-order assistance in a less prescriptive manner than plain-sentence completions</li>
             </ul>
           </div>
           <div class="desc-text">
-            <p>On the <strong>development</strong> end, we accomplished: </p>
+            <p>Our <strong>development</strong> team achieved the following outcomes: </p>
             <ul class="flexcol">
-              <li class="question-desc">Published application to
+              <li class="question-desc">Published the add-in to the
                 <a href="https://appsource.microsoft.com/en-us/product/office/WA200008131?tab=Overview" target="_blank" rel="noopener noreferrer">Microsoft Store</a>
               </li>
-              <li class="question-desc">Rebuilt/optimized internal functions for better performance and scalability for future integrations</li>
+              <li class="question-desc">Rebuilt/optimized internal functions for better performance, scalability, and integration of future functionality</li>
               <li class="question-desc">Created a separate
                 <a href="https://app.thoughtful-ai.com/editor.html" target="_blank" rel="noopener noreferrer">custom editor</a>
-                with identical functionality</li>
+                with identical functionality for increased accessibility</li>
             </ul>
           </div>
           <small>The full report of our findings can be found
-            <a href="#"
+            <a href="https://docs.google.com/document/d/1dzYkYO7WaSTwI5KdKST3qGjLdi4rmuZHm6-4F6edoNA/edit?usp=sharing"
               target="_blank" ref="noopener noreferrer"
             >here</a>.
           </small>
@@ -124,18 +122,18 @@ categories: ["HCI", "NLP", "Undergrad"]
       </section>
 
       <section class="article-section">
-        <h2>Future Works</h2>
+        <h2>Future Work</h2>
         <div class="desc-text">
         <p>On the <strong>research</strong> end, we plan to: </p>
           <ul class="flexcol">
-            <li class="question-desc">Finalize a follow-up study for next generation students</li>
-            <li class="question-desc">Debrief with the development team on opportunities for additional functionality or affordances</li>
+            <li class="question-desc">Finalize a follow-up study for the next generation of students in the Thoughtful AI Lab</li>
+            <li class="question-desc">Seek publication of our results</li>
           </ul>
         </div>
         <div class="desc-text">
-          <p>On the <strong>development</strong> end, we plan to: </p>
+          <p>On the <strong>development</strong> end, we hope the next generation of students in the Thoughtful AI Lab will: </p>
           <ul class="flexcol">
-            <li class="question-desc">Improve system robustness</li>
+            <li class="question-desc">Further improve system robustness</li>
             <li class="question-desc">Improve UI/UX in collaboration with the research team</li>
           </ul>
         </div>
@@ -203,7 +201,7 @@ categories: ["HCI", "NLP", "Undergrad"]
     <footer>
       <div class="footer-content">
         <div class="footer-text">
-          <p>&copy; 2024-2025 Arnold Lab</p>
+          <p>&copy; 2024-2025 Thoughful AI Lab</p>
           <div class="icon-links-container">
             <a href="https://github.com/AIToolsLab/writing-tools" target="_blank" rel="noopener noreferrer"><img class="ghicon" src="./assets/github-mark.png" alt="GitHub" height="16px" /></a>
             <a href="https://docs.google.com/presentation/d/1bXH1PrEU29rzWtMBSW6MCWIvc5Hk2kFb7XeLC5J4GSE/edit?usp=sharing" target="_blank" rel="noopener noreferrer"><img class="ghicon" src="./assets/slides.svg" alt="Slides" height="16px" /></a>
