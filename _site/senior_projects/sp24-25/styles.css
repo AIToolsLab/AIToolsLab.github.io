@@ -151,13 +151,15 @@ small {
 	color: #707070;
 }
 
-small a {
+small a,
+.question-desc a {
 	text-decoration: none;
 	color: #65ba8e;
 	transition: all 0.2s;
 }
 
-small a:hover {
+small a:hover,
+.question-desc a:hover {
 	color: #5eacdd;
 }
 
@@ -267,7 +269,6 @@ small a:hover {
 .desc-text {
 	display: flex;
 	flex-direction: column;
-	margin-top: 2rem;
 }
 
 .img-container {
@@ -319,7 +320,7 @@ small a:hover {
 
 .gtype-img {
 	object-fit: contain;
-	width: 60%;
+	width: 36rem;
 	border-radius: 1rem;
 }
 

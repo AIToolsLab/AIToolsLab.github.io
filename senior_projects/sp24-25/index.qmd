@@ -1,5 +1,10 @@
 ---
 title: "AI for Writers 2024-2025"
+authors:
+  - Jason Chew
+  - Daniel Kim
+  - Kenneth C. Arnold
+date: "2025-05-08"
 format:
   html:
     css: styles.css
@@ -17,8 +22,6 @@ categories: ["HCI", "NLP", "Undergrad"]
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="styles.css" />
   <link rel="icon" href="./assets/logo_black.png" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
   <body>
     <article id="main-article">
@@ -45,7 +48,7 @@ categories: ["HCI", "NLP", "Undergrad"]
             </small>
           </div>
         </div>
-        <div class="desc-text">
+        <div class="desc-text" style="margin-top: 1.6rem;">
           <p>
             Research question we aim to address in this project:
           </p>
@@ -91,8 +94,27 @@ categories: ["HCI", "NLP", "Undergrad"]
 
       <section class="article-section">
         <h2>Outcomes</h2>
-        <div class="desc-text">
-          <p>Placeholder</p>
+          <div class="desc-text">
+            <div class="desc-text">
+          <p>On the <strong>research</strong> end, we found from the user study: </p>
+            <ul class="flexcol">
+              <li class="question-desc">Tension between expedience and preserving ownership</li>
+              <li class="question-desc">Preference for ideational assistance over AI-generated verbiage</li>
+              <li class="question-desc">Questions have potential as topic sentences</li>
+            </ul>
+          </div>
+          <div class="desc-text">
+            <p>On the <strong>development</strong> end, we accomplished: </p>
+            <ul class="flexcol">
+              <li class="question-desc">Published application to
+                <a href="https://appsource.microsoft.com/en-us/product/office/WA200008131?tab=Overview" target="_blank" rel="noopener noreferrer">Microsoft Store</a>
+              </li>
+              <li class="question-desc">Rebuilt/optimized internal functions for better performance and scalability for future integrations</li>
+              <li class="question-desc">Created a separate
+                <a href="https://app.thoughtful-ai.com/editor.html" target="_blank" rel="noopener noreferrer">custom editor</a>
+                with identical functionality</li>
+            </ul>
+          </div>
           <small>The full report of our findings can be found
             <a href="#"
               target="_blank" ref="noopener noreferrer"
@@ -102,11 +124,11 @@ categories: ["HCI", "NLP", "Undergrad"]
       </section>
 
       <section class="article-section">
-        <h2>Future Work</h2>
+        <h2>Future Works</h2>
         <div class="desc-text">
         <p>On the <strong>research</strong> end, we plan to: </p>
           <ul class="flexcol">
-            <li class="question-desc">Iterate on our current study design in a follow-up deployment study</li>
+            <li class="question-desc">Finalize a follow-up study for next generation students</li>
             <li class="question-desc">Debrief with the development team on opportunities for additional functionality or affordances</li>
           </ul>
         </div>
