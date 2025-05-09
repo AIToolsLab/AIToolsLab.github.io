@@ -7,10 +7,12 @@ website:
     left:
       - href: index.qmd
         text: Home
-      - about.qmd
-    right: 
+      - href: senior_projects.qmd
+        text: Senior Projects
       - href: pubs.qmd
         text: Publications
+    right:
+      - about.qmd
 
 format:
   html:
