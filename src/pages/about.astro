@@ -1,0 +1,97 @@
+---
+import Layout from '../layouts/Layout.astro';
+import LabHeader from "../components/lab/LabHeader"
+import LabFooter from "../components/lab/LabFooter"
+---
+
+<Layout title="About" metaDescription="Learn about the Thoughtful AI Tools Lab at Calvin University">
+	<main>
+    <LabHeader client:only="react" />
+    
+    <section class="px-8 py-20 mx-auto max-w-screen-xl">
+      <div class="container mx-auto">
+        <h1 class="text-5xl font-bold text-center mb-12 text-blue-gray-900">About Our Lab</h1>
+        
+        <div class="max-w-4xl mx-auto">
+          <div class="prose prose-lg mx-auto text-gray-700">
+            <p class="text-xl leading-relaxed mb-8">
+              The Thoughtful AI Tools Lab is a research group at Calvin University focused on 
+              developing AI systems that enhance human thinking and decision-making capabilities.
+            </p>
+            
+            <h2 class="text-3xl font-semibold text-blue-gray-900 mb-6">Our Mission</h2>
+            <p class="text-lg leading-relaxed mb-6">
+              We believe that contributing to a flourishing world requires sustained, thoughtful engagement 
+              with complex problems. Our research focuses on creating AI tools that support goal-directed 
+              cognitive effort, even when goals are unclear and situations are complex.
+            </p>
+            
+            <h2 class="text-3xl font-semibold text-blue-gray-900 mb-6">Research Areas</h2>
+            <ul class="text-lg leading-relaxed mb-6 space-y-2">
+              <li>• Human-Computer Interaction (HCI) in AI systems</li>
+              <li>• Natural Language Processing for cognitive support</li>
+              <li>• AI-assisted learning and education</li>
+              <li>• Code generation and programming assistance</li>
+              <li>• Writing and creative AI tools</li>
+            </ul>
+            
+            <h2 class="text-3xl font-semibold text-blue-gray-900 mb-6">Lab Director</h2>
+            <div class="flex flex-col md:flex-row items-start gap-6 mb-8">
+              <img src="/people/ken_arnold.png" alt="Kenneth C. Arnold" class="w-32 h-32 rounded-full object-cover">
+              <div>
+                <h3 class="text-xl font-semibold text-blue-gray-900 mb-2">Kenneth C. Arnold</h3>
+                <p class="text-lg leading-relaxed">
+                  Kenneth leads the Thoughtful AI Tools Lab at Calvin University. 
+                  His research focuses on human-AI collaboration, particularly in areas where AI can augment 
+                  human cognitive capabilities while preserving human agency and creativity.
+                </p>
+              </div>
+            </div>
+            
+            <h2 class="text-3xl font-semibold text-blue-gray-900 mb-6">Current Team Members</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-8">
+              <div class="text-center">
+                <img src="/people/jason_chew.png" alt="Jason Chew" class="w-24 h-24 rounded-full object-cover mx-auto mb-3">
+                <h4 class="font-semibold text-blue-gray-900">Jason Chew</h4>
+                <p class="text-sm text-gray-600">Undergraduate Researcher</p>
+              </div>
+              <div class="text-center">
+                <img src="/people/daniel_kim.png" alt="Daniel Kim" class="w-24 h-24 rounded-full object-cover mx-auto mb-3">
+                <h4 class="font-semibold text-blue-gray-900">Daniel Kim</h4>
+                <p class="text-sm text-gray-600">Undergraduate Researcher</p>
+              </div>
+              <div class="text-center">
+                <img src="/people/jiho_kim.png" alt="Jiho Kim" class="w-24 h-24 rounded-full object-cover mx-auto mb-3">
+                <h4 class="font-semibold text-blue-gray-900">Jiho Kim</h4>
+                <p class="text-sm text-gray-600">Undergraduate Researcher</p>
+              </div>
+              <div class="text-center">
+                <img src="/people/ray_flanagan.png" alt="Ray Flanagan" class="w-24 h-24 rounded-full object-cover mx-auto mb-3">
+                <h4 class="font-semibold text-blue-gray-900">Ray Flanagan</h4>
+                <p class="text-sm text-gray-600">Undergraduate Researcher</p>
+              </div>
+              <div class="text-center">
+                <img src="/people/hannah_yoo.png" alt="Hannah Yoo" class="w-24 h-24 rounded-full object-cover mx-auto mb-3">
+                <h4 class="font-semibold text-blue-gray-900">Hannah Yoo</h4>
+                <p class="text-sm text-gray-600">Undergraduate Researcher</p>
+              </div>
+              <div class="text-center">
+                <img src="/people/daniel_kwon.png" alt="Daniel Kwon" class="w-24 h-24 rounded-full object-cover mx-auto mb-3">
+                <h4 class="font-semibold text-blue-gray-900">Daniel Kwon</h4>
+                <p class="text-sm text-gray-600">Undergraduate Researcher</p>
+              </div>
+            </div>
+            
+            <h2 class="text-3xl font-semibold text-blue-gray-900 mb-6">Contact</h2>
+            <p class="text-lg leading-relaxed">
+              For more information about our research or potential collaboration opportunities, 
+              please feel free to reach out through our publications or project pages.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <LabFooter client:only="react" />
+  </main>
+</Layout>

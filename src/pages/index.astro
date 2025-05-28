@@ -1,0 +1,14 @@
+---
+import Layout from '../layouts/Layout.astro';
+import LabHeader from "../components/lab/LabHeader"
+import LabHero from "../components/lab/LabHero"
+import LabFooter from "../components/lab/LabFooter"
+---
+
+<Layout title="Home" metaDescription="Thoughtful AI Tools Lab - AI research group at Calvin University focused on how AI can help people think better">
+	<main>
+    <LabHeader client:only="react" />
+    <LabHero client:only="react" />
+    <LabFooter client:only="react" />
+  </main>
+</Layout>

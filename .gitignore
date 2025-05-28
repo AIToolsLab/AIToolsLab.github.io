@@ -1,1 +1,13 @@
 /.quarto/
+node_modules
+.DS_Store
+
+# Astro build artifacts
+.astro/
+dist/
+
+# Package manager files
+package-lock.json
+
+# Temporary files and build artifacts
+*.log

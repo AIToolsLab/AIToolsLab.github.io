@@ -1,0 +1,96 @@
+---
+import Layout from '../layouts/Layout.astro';
+import LabHeader from "../components/lab/LabHeader"
+import LabFooter from "../components/lab/LabFooter"
+---
+
+<Layout title="Projects" metaDescription="Current and past projects from the Thoughtful AI Tools Lab at Calvin University">
+	<main>
+    <LabHeader client:only="react" />
+    
+    <section class="px-8 py-20 mx-auto max-w-screen-xl">
+      <div class="container mx-auto">
+        <h1 class="text-5xl font-bold text-center mb-12 text-blue-gray-900">Projects</h1>
+        
+        <div class="grid gap-8 lg:grid-cols-1 xl:grid-cols-1">
+          <!-- Textfocals Project -->
+          <div class="bg-white rounded-lg shadow-lg p-6 border border-gray-200">
+            <h3 class="text-xl font-semibold mb-2 text-blue-gray-900">
+              <a href="https://arxiv.org/abs/2403.01055" target="_blank" class="hover:text-blue-500 transition-colors">
+                Textfocals: AI-Generated Views for Writing Support
+              </a>
+            </h3>
+            <p class="text-gray-600 mb-3">
+              Team: Jiho Kim, Ray C. Flanagan, Noelle E. Haviland, ZeAi Sun, Souad N. Yakubu, Edom A. Maru, Kenneth C. Arnold
+            </p>
+            <p class="text-gray-600 mb-3">
+              Status: Published at HAI-GEN Workshop 2024
+            </p>
+            <div class="flex flex-wrap gap-2 mb-3">
+              <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-sm">HCI</span>
+              <span class="px-2 py-1 bg-green-100 text-green-800 rounded-full text-sm">NLP</span>
+              <span class="px-2 py-1 bg-orange-100 text-orange-800 rounded-full text-sm">Writing Tools</span>
+            </div>
+            <p class="text-gray-700 mb-4">
+              Textfocals is a UI prototype that provides LLM-generated summaries, questions, and advice in a sidebar 
+              of a text editor, encouraging reflection and self-driven revision in writing without direct text generation. 
+              This approach maintains full authorship while leveraging AI to support the writing process.
+            </p>
+            <div class="flex gap-3">
+              <a href="https://arxiv.org/abs/2403.01055" target="_blank" class="inline-flex items-center px-3 py-1 bg-blue-600 text-white text-sm rounded hover:bg-blue-700 transition-colors">
+                📄 Paper
+              </a>
+            </div>
+          </div>
+
+          <!-- Senior Project -->
+          <div class="bg-white rounded-lg shadow-lg p-6 border border-gray-200">
+            <h3 class="text-xl font-semibold mb-2 text-blue-gray-900">
+              AI for Writers 2024-2025
+            </h3>
+            <p class="text-gray-600 mb-3">
+              Students: Jason Chew, Daniel Kim | Advisor: Kenneth C. Arnold
+            </p>
+            <p class="text-gray-600 mb-3">
+              Expected completion: May 8, 2025
+            </p>
+            <div class="flex flex-wrap gap-2 mb-3">
+              <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-sm">HCI</span>
+              <span class="px-2 py-1 bg-green-100 text-green-800 rounded-full text-sm">NLP</span>
+              <span class="px-2 py-1 bg-purple-100 text-purple-800 rounded-full text-sm">Senior Project</span>
+            </div>
+            <p class="text-gray-700">
+              A senior capstone project exploring how AI tools can enhance the writing process
+              while maintaining writer agency and creative control. The project focuses on 
+              developing thoughtful interactions between writers and AI assistants.
+            </p>
+          </div>
+
+          <!-- Cognitive Engagement Research -->
+          <div class="bg-white rounded-lg shadow-lg p-6 border border-gray-200">
+            <h3 class="text-xl font-semibold mb-2 text-blue-gray-900">
+              Promoting End-to-End Intentionality with LLMs
+            </h3>
+            <p class="text-gray-600 mb-3">
+              Team: Jason Chew, Daniel Kim, Jiho Kim, Ray Flanagan | Lead: Kenneth C. Arnold
+            </p>
+            <p class="text-gray-600 mb-3">
+              Status: Ongoing Research
+            </p>
+            <div class="flex flex-wrap gap-2 mb-3">
+              <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-sm">HCI</span>
+              <span class="px-2 py-1 bg-green-100 text-green-800 rounded-full text-sm">Cognitive Science</span>
+              <span class="px-2 py-1 bg-red-100 text-red-800 rounded-full text-sm">Research</span>
+            </div>
+            <p class="text-gray-700">
+              Research investigating how large language models can be designed to promote intentional, 
+              goal-directed thinking and support sustained cognitive effort in complex problem-solving scenarios.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <LabFooter client:only="react" />
+  </main>
+</Layout>
