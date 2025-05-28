@@ -8,27 +8,11 @@
     "start": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "astro": "astro",
-    "create-free-demo": "node create-free-demo.js"
+    "astro": "astro"
   },
   "keywords": [
-    "Astro",
-    "Startup",
-    "Corporate",
-    "Store Theme",
-    "Online Store",
-    "Startup template",
-    "Astro startup",
-    "Astro Startup",
-    "Astro store",
-    "Store theme",
-    "Startup theme",
-    "Astro Startup theme",
-    "Astro Startup store",
-    "Astro template",
-    "Astro store template"
   ],
-  "author": "Creative Tim <hello@creative-tim.com> (https://www.creative-tim.com/)",
+  "author": "Ken Arnold (https://kenarnold.org), based on work by https://www.creative-tim.com/",
   "license": "MIT",
   "dependencies": {
     "@astrojs/react": "^4.2.2",
