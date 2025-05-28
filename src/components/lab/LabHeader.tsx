@@ -28,6 +28,11 @@ function NavList() {
           About
         </a>
       </li>
+      <li className="p-1 font-medium text-sm text-blue-gray-700">
+        <a href="/vision" className="flex items-center hover:text-blue-500 transition-colors">
+          Vision
+        </a>
+      </li>
     </ul>
   );
 }

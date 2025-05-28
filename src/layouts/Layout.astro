@@ -1,10 +1,13 @@
 ---
+import LabHeader from "../components/lab/LabHeader";
+import LabFooter from "../components/lab/LabFooter";
 export interface Props {
   title: string;
   metaDescription?: string;
+  prose?: boolean;
 }
 
-const { title, metaDescription } = Astro.props;
+const { title, metaDescription, prose } = Astro.props;
 ---
 
 <!DOCTYPE html>
@@ -24,8 +27,15 @@ const { title, metaDescription } = Astro.props;
     <!-- Remove Google Tag Manager for lab site -->
   </head>
   <body class="overflow-x-hidden">
-    <!-- Remove Google Tag Manager (noscript) for lab site -->
-    <slot />
+    <LabHeader client:only="react" />
+    {prose ? (
+      <main class="prose prose-lg mx-auto px-4 py-12">
+        <slot />
+      </main>
+    ) : (
+      <slot />
+    )}
+    <LabFooter client:only="react" />
   </body>
   <script
     src="https://kit.fontawesome.com/349ee9c857.js"

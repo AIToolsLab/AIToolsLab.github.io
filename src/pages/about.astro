@@ -5,9 +5,7 @@ import LabFooter from "../components/lab/LabFooter"
 ---
 
 <Layout title="About" metaDescription="Learn about the Thoughtful AI Tools Lab at Calvin University">
-	<main>
-    <LabHeader client:only="react" />
-    
+  <main>
     <section class="px-8 py-20 mx-auto max-w-screen-xl">
       <div class="container mx-auto">
         <h1 class="text-5xl font-bold text-center mb-12 text-blue-gray-900">About Our Lab</h1>
@@ -15,25 +13,8 @@ import LabFooter from "../components/lab/LabFooter"
         <div class="max-w-4xl mx-auto">
           <div class="prose prose-lg mx-auto text-gray-700">
             <p class="text-xl leading-relaxed mb-8">
-              The Thoughtful AI Tools Lab is a research group at Calvin University focused on 
-              developing AI systems that enhance human thinking and decision-making capabilities.
+              The Thoughtful AI Tools Lab is a research group at Calvin University focused on developing AI tools to help us think and communicate <em>better</em>, not <em>faster</em>.
             </p>
-            
-            <h2 class="text-3xl font-semibold text-blue-gray-900 mb-6">Our Mission</h2>
-            <p class="text-lg leading-relaxed mb-6">
-              We believe that contributing to a flourishing world requires sustained, thoughtful engagement 
-              with complex problems. Our research focuses on creating AI tools that support goal-directed 
-              cognitive effort, even when goals are unclear and situations are complex.
-            </p>
-            
-            <h2 class="text-3xl font-semibold text-blue-gray-900 mb-6">Research Areas</h2>
-            <ul class="text-lg leading-relaxed mb-6 space-y-2">
-              <li>• Human-Computer Interaction (HCI) in AI systems</li>
-              <li>• Natural Language Processing for cognitive support</li>
-              <li>• AI-assisted learning and education</li>
-              <li>• Code generation and programming assistance</li>
-              <li>• Writing and creative AI tools</li>
-            </ul>
             
             <h2 class="text-3xl font-semibold text-blue-gray-900 mb-6">Lab Director</h2>
             <div class="flex flex-col md:flex-row items-start gap-6 mb-8">
@@ -41,9 +22,9 @@ import LabFooter from "../components/lab/LabFooter"
               <div>
                 <h3 class="text-xl font-semibold text-blue-gray-900 mb-2">Kenneth C. Arnold</h3>
                 <p class="text-lg leading-relaxed">
-                  Kenneth leads the Thoughtful AI Tools Lab at Calvin University. 
-                  His research focuses on human-AI collaboration, particularly in areas where AI can augment 
-                  human cognitive capabilities while preserving human agency and creativity.
+                  Ken Arnold is an assistant professor of computer science and data science at Calvin University and
+                  leads the Thoughtful AI Tools Lab of undergraduate student researchers, developers, and designers.
+                  His research has shown how predictive text interfaces, like those in smartphones and email apps, can shape the content of human communication. He is currently developing intelligence augmentation to help writers serve readers by crafting words that are fully their own. His other research interests include human-AI interaction in communication, creativity, and education. He holds advanced degrees from Harvard and MIT.
                 </p>
               </div>
             </div>
@@ -90,8 +71,6 @@ import LabFooter from "../components/lab/LabFooter"
           </div>
         </div>
       </div>
-    </section>
-    
-    <LabFooter client:only="react" />
+    </section>    
   </main>
 </Layout>
