@@ -1,7 +1,10 @@
 ---
-import Layout from '../../layouts/Layout.astro';
-import LabHeader from "../../components/lab/LabHeader"
-import LabFooter from "../../components/lab/LabFooter"
+import Layout from '../../../layouts/Layout.astro';
+import LabHeader from "../../../components/lab/LabHeader"
+import LabFooter from "../../../components/lab/LabFooter"
+import { Image } from 'astro:assets';
+import wordDemo from './word_demo.png';
+import gtypeUI from './Gtype_2024UI.png';
 ---
 
 <Layout title="AI for Writers 2024-2025" metaDescription="Detailed information about the AI for Writers 2024-2025 senior project at Calvin University">
@@ -45,6 +48,13 @@ import LabFooter from "../../components/lab/LabFooter"
                 A user study with N=9 participants revealed that the single-sentence scale of the add-in's suggestions contributed to a more natural, recursive writing workflow.
                 We have since deployed the add-in to the Microsoft Store, where it is available for all students and faculty at Calvin University to test.
               </p>
+              
+              <div class="bg-blue-50 p-4 rounded-lg mt-4">
+                <p class="text-gray-700 mb-2 font-medium">Our primary research question:</p>
+                <blockquote class="text-blue-800 font-semibold italic">
+                  "How might writers' interactions with each of our suggestion types emulate the various stages of the writing process?"
+                </blockquote>
+              </div>
             </div>
 
             <div>
@@ -57,7 +67,7 @@ import LabFooter from "../../components/lab/LabFooter"
                 <li><strong>A rhetorical strategy to employ:</strong> directions on the kind of sentence to write, such as citing statistics, offering a personal anecdote, incorporating a counterargument, etc.</li>
               </ul>
               <div class="my-6">
-                <img src="/projects/ai-writers-2024-25/Gtype_2024UI.png" alt="Four generation types" class="w-full max-w-3xl mx-auto rounded-lg shadow-md" />
+                <Image src={gtypeUI} alt="Four generation types" class="w-full max-w-3xl mx-auto rounded-lg shadow-md" />
                 <p class="text-center text-gray-600 mt-2 italic">The four types of next-sentence suggestions offered by our Microsoft Word add-in</p>
               </div>
             </div>
@@ -65,7 +75,7 @@ import LabFooter from "../../components/lab/LabFooter"
             <div>
               <h2 class="font-semibold text-2xl mb-4">Demo</h2>
               <div class="my-6">
-                <img src="/projects/ai-writers-2024-25/word_demo.png" alt="Demo of the Microsoft Word add-in" class="w-full max-w-3xl mx-auto rounded-lg shadow-md mb-4" />
+                <Image src={wordDemo} alt="Demo of the Microsoft Word add-in" class="w-full max-w-3xl mx-auto rounded-lg shadow-md mb-4" />
                 <p class="text-center text-gray-600 mb-4 italic">Screenshot of the Microsoft Word add-in in action</p>
                 <div class="text-center">
                   <a href="https://app.thoughtful-ai.com/" target="_blank" class="inline-flex items-center px-6 py-3 bg-blue-600 text-white text-lg rounded hover:bg-blue-700 transition-colors">
@@ -98,22 +108,71 @@ import LabFooter from "../../components/lab/LabFooter"
             </div>
 
             <div>
+              <h2 class="font-semibold text-2xl mb-4">Future Work</h2>
+              <div class="grid md:grid-cols-2 gap-6">
+                <div>
+                  <h3 class="font-medium text-xl mb-3">Research Goals:</h3>
+                  <ul class="list-disc list-inside text-gray-700 space-y-2 text-lg">
+                    <li>Finalize a follow-up study for the next generation of students in the Thoughtful AI Lab</li>
+                    <li>Seek publication of our results</li>
+                  </ul>
+                </div>
+                <div>
+                  <h3 class="font-medium text-xl mb-3">Development Goals:</h3>
+                  <ul class="list-disc list-inside text-gray-700 space-y-2 text-lg">
+                    <li>Further improve system robustness</li>
+                    <li>Improve UI/UX in collaboration with the research team</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div>
               <h2 class="font-semibold text-2xl mb-4">Team</h2>
-              <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+              
+              <!-- Core Team -->
+              <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-8">
                 <div class="text-center">
                   <img src="https://avatars.githubusercontent.com/u/107449866" alt="Jason Chew" class="w-20 h-20 rounded-full mx-auto mb-3" />
                   <a href="https://github.com/Geesing" target="_blank" class="font-medium text-lg text-blue-600 hover:underline">Jason Chew</a>
-                  <p class="text-gray-600 mt-2">Enjoys applying syntactical skills across code and composition, particularly interested in AI and writing intersection.</p>
+                  <p class="text-gray-600 mt-2">Whether it be in code or in composition, Jason enjoys applying his syntactical skills across a variety of domains—a trait which has made him particularly interested in the intersection of AI and writing.</p>
                 </div>
                 <div class="text-center">
                   <img src="https://avatars.githubusercontent.com/u/95011871" alt="Daniel Kim" class="w-20 h-20 rounded-full mx-auto mb-3" />
                   <a href="https://github.com/Cobblestone5517" target="_blank" class="font-medium text-lg text-blue-600 hover:underline">Daniel Kim</a>
-                  <p class="text-gray-600 mt-2">Passionate about human-computer interaction and designing intuitive user interfaces for AI-powered tools.</p>
+                  <p class="text-gray-600 mt-2">Daniel is passionate about human-computer interaction and designing intuitive user interfaces. Amidst the widespread proliferation of AI technologies, Daniel aims to develop AI-powered tools that are both useful and user-friendly.</p>
                 </div>
                 <div class="text-center">
                   <img src="https://avatars.githubusercontent.com/u/21072" alt="Kenneth C. Arnold" class="w-20 h-20 rounded-full mx-auto mb-3" />
                   <a href="https://github.com/kcarnold" target="_blank" class="font-medium text-lg text-blue-600 hover:underline">Dr. Kenneth C. Arnold</a>
                   <p class="text-gray-600 mt-2">Advisor for the Thoughtful AI Lab and its associated senior projects at Calvin University.</p>
+                </div>
+              </div>
+
+              <!-- Associate Team -->
+              <div class="border-t pt-6">
+                <h3 class="font-medium text-lg mb-4 text-gray-600">Associate Researchers & Developers</h3>
+                <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
+                  <div class="text-center opacity-75">
+                    <img src="https://avatars.githubusercontent.com/u/55632840" alt="Jiho Kim" class="w-16 h-16 rounded-full mx-auto mb-2 opacity-80" />
+                    <a href="https://github.com/nghtctrl" target="_blank" class="font-medium text-gray-500 hover:text-blue-600">Jiho Kim</a>
+                    <p class="text-gray-500 mt-1 text-sm">Associate researcher</p>
+                  </div>
+                  <div class="text-center opacity-75">
+                    <img src="https://avatars.githubusercontent.com/u/70855644" alt="Ray Flanagan" class="w-16 h-16 rounded-full mx-auto mb-2 opacity-80" />
+                    <a href="https://github.com/RayHCai" target="_blank" class="font-medium text-gray-500 hover:text-blue-600">Ray Flanagan</a>
+                    <p class="text-gray-500 mt-1 text-sm">Associate researcher and developer</p>
+                  </div>
+                  <div class="text-center opacity-75">
+                    <img src="https://avatars.githubusercontent.com/u/113206924" alt="Daniel Kwon" class="w-16 h-16 rounded-full mx-auto mb-2 opacity-80" />
+                    <a href="https://github.com/hk238" target="_blank" class="font-medium text-gray-500 hover:text-blue-600">Daniel Kwon</a>
+                    <p class="text-gray-500 mt-1 text-sm">Associate developer</p>
+                  </div>
+                  <div class="text-center opacity-75">
+                    <img src="https://avatars.githubusercontent.com/u/122395833" alt="Hannah Yoo" class="w-16 h-16 rounded-full mx-auto mb-2 opacity-80" />
+                    <a href="https://github.com/joohayoo" target="_blank" class="font-medium text-gray-500 hover:text-blue-600">Hannah Yoo</a>
+                    <p class="text-gray-500 mt-1 text-sm">Associate researcher and developer</p>
+                  </div>
                 </div>
               </div>
             </div>
@@ -132,6 +191,12 @@ import LabFooter from "../../components/lab/LabFooter"
                 </a>
                 <a href="https://docs.google.com/presentation/d/1bXH1PrEU29rzWtMBSW6MCWIvc5Hk2kFb7XeLC5J4GSE/edit?usp=sharing" target="_blank" class="inline-flex items-center px-4 py-2 bg-purple-600 text-white rounded hover:bg-purple-700 transition-colors">
                   📊 Slides
+                </a>
+                <a href="https://github.com/AIToolsLab/writing-tools" target="_blank" class="inline-flex items-center px-4 py-2 bg-gray-800 text-white rounded hover:bg-gray-900 transition-colors">
+                  💻 GitHub Repository
+                </a>
+                <a href="https://calvin.edu/academics/school-stem/computer-science" target="_blank" class="inline-flex items-center px-4 py-2 bg-orange-600 text-white rounded hover:bg-orange-700 transition-colors">
+                  🏫 Calvin University CS
                 </a>
               </div>
             </div>
