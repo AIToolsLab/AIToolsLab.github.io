@@ -1,0 +1,145 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import LabHeader from "../../components/lab/LabHeader"
+import LabFooter from "../../components/lab/LabFooter"
+---
+
+<Layout title="AI for Writers 2024-2025" metaDescription="Detailed information about the AI for Writers 2024-2025 senior project at Calvin University">
+	<main>
+    <LabHeader client:only="react" />
+    
+    <section class="px-8 py-20 mx-auto max-w-screen-xl">
+      <div class="container mx-auto">
+        <!-- Breadcrumb -->
+        <nav class="mb-8">
+          <a href="/projects" class="text-blue-600 hover:underline">← Back to Projects</a>
+        </nav>
+
+        <div class="bg-white rounded-lg shadow-lg p-8 border border-gray-200">
+          <h1 class="text-4xl font-bold mb-4 text-blue-gray-900">
+            AI for Writers 2024-2025
+          </h1>
+          <p class="text-gray-600 mb-3 text-lg">
+            Students: Jason Chew, Daniel Kim | Advisor: Kenneth C. Arnold
+          </p>
+          <p class="text-gray-600 mb-6 text-lg">
+            Completed: May 8, 2025
+          </p>
+          <div class="flex flex-wrap gap-2 mb-8">
+            <span class="px-3 py-1 bg-blue-100 text-blue-800 rounded-full">HCI</span>
+            <span class="px-3 py-1 bg-green-100 text-green-800 rounded-full">NLP</span>
+            <span class="px-3 py-1 bg-purple-100 text-purple-800 rounded-full">Senior Project</span>
+          </div>
+          
+          <div class="space-y-8">
+            <div>
+              <h2 class="font-semibold text-2xl mb-4">Vision</h2>
+              <p class="text-gray-700 mb-4 text-lg leading-relaxed">
+                Under the guidance of Dr. Ken Arnold, the Thoughtful AI lab conducts research into applications of large language models (LLMs)
+                which enhance—but do not replace—the users' writing. Our lab focuses on two categories of these applications: AI-generated
+                feedback for the revision stage of writing and AI-generated recommendations for the drafting stage of writing.
+              </p>
+              <p class="text-gray-700 mb-4 text-lg leading-relaxed">
+                From 2023-2025, we developed a Microsoft Word add-in to generate next-sentence suggestions at varying levels of semantic completeness.
+                These suggestions were designed to correspond to multiple stages and substages of composition, thus facilitating engagement with the writing process at multiple levels.
+                A user study with N=9 participants revealed that the single-sentence scale of the add-in's suggestions contributed to a more natural, recursive writing workflow.
+                We have since deployed the add-in to the Microsoft Store, where it is available for all students and faculty at Calvin University to test.
+              </p>
+            </div>
+
+            <div>
+              <h2 class="font-semibold text-2xl mb-4">Approaches</h2>
+              <p class="text-gray-700 mb-4 text-lg">Our Microsoft Word add-in offers next-sentence suggestions in four forms:</p>
+              <ul class="list-disc list-inside text-gray-700 mb-6 space-y-2 text-lg">
+                <li><strong>Completion of a current thought:</strong> provides a single pre-written sentence</li>
+                <li><strong>A question about current/future writing:</strong> a question the writer could answer in the next sentence</li>
+                <li><strong>A list of possible vocabulary:</strong> vocabulary to use in the next sentence</li>
+                <li><strong>A rhetorical strategy to employ:</strong> directions on the kind of sentence to write, such as citing statistics, offering a personal anecdote, incorporating a counterargument, etc.</li>
+              </ul>
+              <div class="my-6">
+                <img src="/projects/ai-writers-2024-25/Gtype_2024UI.png" alt="Four generation types" class="w-full max-w-3xl mx-auto rounded-lg shadow-md" />
+                <p class="text-center text-gray-600 mt-2 italic">The four types of next-sentence suggestions offered by our Microsoft Word add-in</p>
+              </div>
+            </div>
+
+            <div>
+              <h2 class="font-semibold text-2xl mb-4">Demo</h2>
+              <div class="my-6">
+                <img src="/projects/ai-writers-2024-25/word_demo.png" alt="Demo of the Microsoft Word add-in" class="w-full max-w-3xl mx-auto rounded-lg shadow-md mb-4" />
+                <p class="text-center text-gray-600 mb-4 italic">Screenshot of the Microsoft Word add-in in action</p>
+                <div class="text-center">
+                  <a href="https://app.thoughtful-ai.com/" target="_blank" class="inline-flex items-center px-6 py-3 bg-blue-600 text-white text-lg rounded hover:bg-blue-700 transition-colors">
+                    Try it yourself!
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div>
+              <h2 class="font-semibold text-2xl mb-4">Key Findings</h2>
+              <div class="grid md:grid-cols-2 gap-6">
+                <div>
+                  <h3 class="font-medium text-xl mb-3">Research Outcomes:</h3>
+                  <ul class="list-disc list-inside text-gray-700 space-y-2 text-lg">
+                    <li>The single-sentence scale of suggestions contributed to heightened engagement with the writing process</li>
+                    <li>Writers prefer higher-order, conceptual suggestions over word-for-word articulation assistance</li>
+                    <li>Question-type suggestions provide higher-order assistance in a less prescriptive manner than plain-sentence completions</li>
+                  </ul>
+                </div>
+                <div>
+                  <h3 class="font-medium text-xl mb-3">Development Achievements:</h3>
+                  <ul class="list-disc list-inside text-gray-700 space-y-2 text-lg">
+                    <li>Published the add-in to the <a href="https://appsource.microsoft.com/en-us/product/office/WA200008131?tab=Overview" target="_blank" class="text-blue-600 hover:underline">Microsoft Store</a></li>
+                    <li>Rebuilt/optimized internal functions for better performance and scalability</li>
+                    <li>Created a separate <a href="https://app.thoughtful-ai.com/editor.html" target="_blank" class="text-blue-600 hover:underline">custom editor</a> for increased accessibility</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div>
+              <h2 class="font-semibold text-2xl mb-4">Team</h2>
+              <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="text-center">
+                  <img src="https://avatars.githubusercontent.com/u/107449866" alt="Jason Chew" class="w-20 h-20 rounded-full mx-auto mb-3" />
+                  <a href="https://github.com/Geesing" target="_blank" class="font-medium text-lg text-blue-600 hover:underline">Jason Chew</a>
+                  <p class="text-gray-600 mt-2">Enjoys applying syntactical skills across code and composition, particularly interested in AI and writing intersection.</p>
+                </div>
+                <div class="text-center">
+                  <img src="https://avatars.githubusercontent.com/u/95011871" alt="Daniel Kim" class="w-20 h-20 rounded-full mx-auto mb-3" />
+                  <a href="https://github.com/Cobblestone5517" target="_blank" class="font-medium text-lg text-blue-600 hover:underline">Daniel Kim</a>
+                  <p class="text-gray-600 mt-2">Passionate about human-computer interaction and designing intuitive user interfaces for AI-powered tools.</p>
+                </div>
+                <div class="text-center">
+                  <img src="https://avatars.githubusercontent.com/u/21072" alt="Kenneth C. Arnold" class="w-20 h-20 rounded-full mx-auto mb-3" />
+                  <a href="https://github.com/kcarnold" target="_blank" class="font-medium text-lg text-blue-600 hover:underline">Dr. Kenneth C. Arnold</a>
+                  <p class="text-gray-600 mt-2">Advisor for the Thoughtful AI Lab and its associated senior projects at Calvin University.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="bg-gray-50 p-6 rounded-lg">
+              <h2 class="font-semibold text-2xl mb-4">Project Resources</h2>
+              <div class="flex flex-wrap gap-3">
+                <a href="https://docs.google.com/document/d/1GRvUEJCl-vIJSgVMcpaj9J5lc-9hctZybwQeY807DjU/edit?usp=sharing" target="_blank" class="inline-flex items-center px-4 py-2 bg-gray-600 text-white rounded hover:bg-gray-700 transition-colors">
+                  📄 Project Proposal
+                </a>
+                <a href="https://docs.google.com/document/d/1dzYkYO7WaSTwI5KdKST3qGjLdi4rmuZHm6-4F6edoNA/edit?usp=sharing" target="_blank" class="inline-flex items-center px-4 py-2 bg-green-600 text-white rounded hover:bg-green-700 transition-colors">
+                  📊 Full Report
+                </a>
+                <a href="https://app.thoughtful-ai.com/" target="_blank" class="inline-flex items-center px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700 transition-colors">
+                  🚀 Try the Tool
+                </a>
+                <a href="https://docs.google.com/presentation/d/1bXH1PrEU29rzWtMBSW6MCWIvc5Hk2kFb7XeLC5J4GSE/edit?usp=sharing" target="_blank" class="inline-flex items-center px-4 py-2 bg-purple-600 text-white rounded hover:bg-purple-700 transition-colors">
+                  📊 Slides
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <LabFooter client:only="react" />
+  </main>
+</Layout>
