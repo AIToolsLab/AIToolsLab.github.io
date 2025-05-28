@@ -1,5 +1,5 @@
 ---
-layout: ../layouts/Layout.astro
+layout: "../layouts/Layout.astro"
 title: "Why Thoughtful AI"
 description: "Our lab's purpose and motivation"
 prose: true
