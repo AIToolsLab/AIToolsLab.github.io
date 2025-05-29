@@ -1,11 +1,14 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import Content404 from "../components/404/content"
 
 ---
 
 <Layout title="404 Error Page">
 	<main>
-    <Content404 client:only="react" />
+    <section class="flex flex-col items-center justify-center min-h-screen text-center">
+      <h1 class="text-6xl font-bold mb-4">404</h1>
+      <p class="text-xl mb-8">Page Not Found</p>
+      <a href="/" class="text-blue-500 hover:underline">Go back to Home</a>
+    </section>
   </main>
 </Layout>
