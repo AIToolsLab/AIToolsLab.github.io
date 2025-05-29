@@ -57,29 +57,22 @@ export default function LabHero() {
             We build AI tools to support sustained goal-directed cognitive effort despite unclear goals and complex situations.
           </Typography>
           <div className="flex flex-col items-center gap-4 lg:flex-row lg:justify-center">
-            <Button 
-              size="lg" 
-              className="w-full lg:w-auto"
-              placeholder={undefined}
-              onPointerEnterCapture={undefined}
-              onPointerLeaveCapture={undefined}
-              onResize={undefined}
-              onResizeCapture={undefined}
+            <a
+              href="/publications"
+              className="w-full lg:w-auto inline-block px-6 py-3 text-base font-medium text-white bg-blue-500 rounded-lg shadow-md hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-opacity-75 text-center transition"
+              role="button"
+              tabIndex={0}
             >
-              <a href="/publications">View Our Publications</a>
-            </Button>
-            <Button 
-              variant="outlined" 
-              size="lg" 
-              className="w-full lg:w-auto"
-              placeholder={undefined}
-              onPointerEnterCapture={undefined}
-              onPointerLeaveCapture={undefined}
-              onResize={undefined}
-              onResizeCapture={undefined}
+              View Our Publications
+            </a>
+            <a
+              href="/projects"
+              className="w-full lg:w-auto inline-block px-6 py-3 text-base font-medium text-blue-500 border border-blue-500 rounded-lg shadow-md hover:bg-blue-50 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-opacity-75 text-center transition"
+              role="button"
+              tabIndex={0}
             >
-              <a href="/projects">Explore Projects</a>
-            </Button>
+              Explore Projects
+            </a>
           </div>
         </div>
       </section>
