@@ -5,6 +5,12 @@ export interface Props {
   title?: string;
   metaDescription?: string;
   prose?: boolean;
+  frontmatter?: {
+    title?: string;
+    description?: string;
+    metaDescription?: string;
+    prose?: boolean;
+  };
 }
 
 // Support both direct props (Astro pages) and frontmatter (Markdown)
