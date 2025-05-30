@@ -1,6 +1,6 @@
 export default function LabFooter() {
   return (
-    <footer className="py-2">
+    <footer className="py-2 mx-auto max-w-screen-xl px-6">
       <div className="flex w-full flex-row flex-wrap items-center justify-center gap-6 px-2 md:justify-between">
         <span className="text-sm font-normal text-inherit">&copy; 2025 Thoughtful AI Tools Lab, Calvin University</span>
         <ul className="flex items-center gap-4">
