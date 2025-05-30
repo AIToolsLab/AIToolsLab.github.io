@@ -11,16 +11,16 @@ import Layout from '../layouts/Layout.astro';
         <div class="grid gap-8 lg:grid-cols-1 xl:grid-cols-1">
           <!-- Publication 1 -->
           <div class="bg-white rounded-lg shadow-lg border border-gray-200 overflow-hidden">
-            <div class="md:flex">
-              <div class="md:w-1/3 relative group cursor-pointer" onclick="openImageModal('/pubs/haigen24/featured.png', 'Textfocals UI showing AI-generated views in sidebar')">
-                <img src="/pubs/haigen24/featured.png" alt="Textfocals UI showing AI-generated views in sidebar" class="w-full h-48 md:h-full object-cover transition-transform duration-300 group-hover:scale-105">
+            <div class="flex flex-col lg:flex-row">
+              <div class="lg:w-1/3 relative group cursor-pointer" onclick="openImageModal('/pubs/haigen24/featured.png', 'Textfocals UI showing AI-generated views in sidebar')">
+                <img src="/pubs/haigen24/featured.png" alt="Textfocals UI showing AI-generated views in sidebar" class="w-full h-48 lg:h-full object-cover transition-transform duration-300 group-hover:scale-105">
                 <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-20 transition-all duration-300 flex items-center justify-center">
                   <div class="text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300 text-sm font-medium">
                     Click to expand
                   </div>
                 </div>
               </div>
-              <div class="md:w-2/3 p-6">
+              <div class="lg:w-2/3 p-6">
                 <h3 class="text-xl font-semibold mb-2 text-blue-gray-900">
                   <a href="https://arxiv.org/abs/2403.01055" target="_blank" class="hover:text-blue-500 transition-colors">
                     Towards Full Authorship with AI: Supporting Revision with AI-Generated Views
@@ -54,9 +54,9 @@ import Layout from '../layouts/Layout.astro';
 
           <!-- Publication 2 -->
           <div class="bg-white rounded-lg shadow-lg border border-gray-200 overflow-hidden">
-            <div class="md:flex">
-              <div class="md:w-1/3 relative group cursor-pointer" onclick="openImageModal('/pubs/cognitive-engagement/featured.png', 'Research diagram showing cognitive engagement with AI suggestions')">
-                <img src="/pubs/cognitive-engagement/featured.png" alt="Research diagram showing cognitive engagement with AI suggestions" class="w-full h-48 md:h-full object-cover transition-transform duration-300 group-hover:scale-105">
+            <div class="flex flex-col lg:flex-row">
+              <div class="lg:w-1/3 relative group cursor-pointer" onclick="openImageModal('/pubs/cognitive-engagement/featured.png', 'Research diagram showing cognitive engagement with AI suggestions')">
+                <img src="/pubs/cognitive-engagement/featured.png" alt="Research diagram showing cognitive engagement with AI suggestions" class="w-full h-48 lg:h-full object-cover transition-transform duration-300 group-hover:scale-105">
                 <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-20 transition-all duration-300 flex items-center justify-center">
                   <div class="text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300 text-sm font-medium">
                     Click to expand
