@@ -16,19 +16,29 @@ export default function LabHero() {
         </p>
         <div className="flex flex-col items-center gap-4 lg:flex-row lg:justify-center">
           <a
-            href="/projects"
+            href="https://app.thoughtful-ai.com/"
             className="w-full lg:w-auto inline-block px-6 py-3 text-base font-medium text-white bg-blue-500 rounded-lg shadow-md hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-opacity-75 text-center transition"
             role="button"
             tabIndex={0}
-            >
-          Explore Projects
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Try Our App
+          </a>
+          <a
+            href="/projects"
+            className="w-full lg:w-auto inline-block px-6 py-3 text-base font-medium text-blue-500 border border-blue-500 rounded-lg shadow-md hover:bg-blue-50 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-opacity-75 text-center transition"
+            role="button"
+            tabIndex={0}
+          >
+            Explore Projects
           </a>
           <a
             href="/publications"
             className="w-full lg:w-auto inline-block px-6 py-3 text-base font-medium text-blue-500 border border-blue-500 rounded-lg shadow-md hover:bg-blue-50 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-opacity-75 text-center transition"
             role="button"
             tabIndex={0}
-            >
+          >
             View Our Publications
           </a>
         </div>
