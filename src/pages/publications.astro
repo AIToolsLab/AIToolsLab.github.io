@@ -9,7 +9,8 @@ const publications = [
     image: "/pubs/haigen24/featured.png",
     imageAlt: "Textfocals UI showing AI-generated views in sidebar",
     authors: ["Jiho Kim", "Ray C. Flanagan", "Noelle E. Haviland", "ZeAi Sun", "Souad N. Yakubu", "Edom A. Maru", "Kenneth C. Arnold"],
-    venue: "HAI-GEN Workshop at ACM IUI 2024 • March 18, 2024",
+    venue: "HAI-GEN Workshop at ACM IUI 2024",
+    date: "March 18, 2024",
     tags: ["HCI", "NLP", "Undergrad"],
     description: `We introduce Textfocals, a UI prototype designed to investigate a human-centered approach that emphasizes the user's role in writing. Textfocals supports the writing process by providing LLM-generated summaries, questions, and advice in a sidebar, encouraging reflection and self-driven revision while maintaining full authorship.A formative user study with Textfocals showed promising evidence that this approach might help users develop underdeveloped ideas, cater to the rhetorical audience, and clarify their writing.`,
     links: [
@@ -23,7 +24,8 @@ const publications = [
     image: "/pubs/cognitive-engagement/featured.png",
     imageAlt: "Research diagram showing cognitive engagement with AI suggestions",
     authors: ["Jason Chew", "Daniel Kim", "Jiho Kim", "Ray Flanagan", "Kenneth C. Arnold"],
-    venue: "Calvin STEM Poster Fair • October 25, 2024",
+    venue: "Calvin STEM Poster Fair",
+    date: "October 25, 2024",
     tags: ["HCI", "NLP", "Undergrad"],
     description: `In Summer 2024, our team of undergraduate students conducted a study on how the type of information suggested by an AI writing assistant affects writers’ cognitive engagement with the suggestion and how they appropriate that suggestion in their draft. We developed a Microsoft Word sidebar  that offered next-sentence suggestions expressed in four different ways: in addition to predictive-text-style examples they could use verbatim (e.g., by copy-and-paste), we also allowed writers to request questions that the next sentence might answer, vocabulary they might use, and rhetorical moves (such as giving examples or considering counterarguments) that their next sentence might engage with.<br><br>In a pilot study (N=8), writers found questions and rhetorical moves to be useful and friendly. Although writers chose to request examples more often, they often rejected the suggested text. Overall, they rated the Questions suggestion type as most compelling in post-task surveys, followed by Examples. These preliminary results suggest that writers welcomed AI suggestions that could not be inserted verbatim into their documents but instead required further thought. Overall, by offering intentionally-incomplete suggestions like Questions or Rhetorical Moves, AI systems might become better cognitive partners for writers, enriching thinking rather than circumventing it. This work has been presented at an internal poster fair; we are designing a follow-up experiment to build on these findings for broader publication.`,
     links: [
@@ -60,7 +62,7 @@ const publications = [
                     )}
                   </h3>
                   <p class="text-gray-600 mb-3">Authors: {pub.authors.join(", ")}</p>
-                  <p class="text-gray-600 mb-3 text-sm">{pub.venue}</p>
+                  <p class="text-gray-600 mb-3 text-sm">{pub.venue}{pub.date ? ` • ${pub.date}` : ''}</p>
                   <div class="flex flex-wrap gap-2 mb-3">
                     {pub.tags.map(tag => (
                       <span class={`px-2 py-1 rounded-full text-sm ${tag === 'HCI' ? 'bg-blue-100 text-blue-800' : tag === 'NLP' ? 'bg-green-100 text-green-800' : 'bg-purple-100 text-purple-800'}`}>{tag}</span>
