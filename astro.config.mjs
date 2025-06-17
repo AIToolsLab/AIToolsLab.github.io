@@ -10,6 +10,6 @@ const isProd = process.env.NODE_ENV === "production";
 // https://astro.build/config
 export default defineConfig({
   integrations: [react(), tailwind()],
-  site: "https://aitoolslab.github.io",
+  site: "https://thoughtful-ai.com",
   base: "/",
 });

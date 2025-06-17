@@ -60,7 +60,7 @@ Astro-based version of the Thoughtful AI Tools Lab website.
 ## Configuration
 
 - Base URL: `/`
-- Site URL: `https://aitoolslab.github.io`
+- Site URL: `https://thoughtful-ai.com`
 - TypeScript: strict mode
 
 
