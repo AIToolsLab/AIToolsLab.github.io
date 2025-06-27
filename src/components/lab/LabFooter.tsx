@@ -30,6 +30,9 @@ export default function LabFooter() {
           </li>
         </ul>
       </div>
+      <div className="w-full text-center mt-2 text-xs text-gray-600">
+        This material is based upon work supported by the <a href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=2246145" className="underline text-blue-600 hover:text-blue-800" target="_blank" rel="noopener noreferrer">National Science Foundation under Grant No. 2246145</a>.
+      </div>
     </footer>
   );
 }
