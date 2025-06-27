@@ -13,8 +13,17 @@ const publications = [
     date: "May 4, 2025",
     tags: ["HCI", "NLP", "Undergrad"],
     description: `This paper explores interaction designs for generative AI interfaces that necessitate human involvement throughout the generation process. We argue that such interfaces can promote cognitive engagement, agency, and thoughtful decision-making. Through a case study in text revision, we present and analyze two interaction techniques: (1) using a predictive-text interaction to type the assistant's response to a revision request, and (2) highlighting potential edit opportunities in a document. Our implementations demonstrate how these approaches reveal the landscape of writing possibilities and enable fine-grained control. We discuss implications for human-AI writing partnerships and future interaction design directions.`,
-    links: [
-      { label: "📄 Paper", url: "https://arxiv.org/abs/2504.08726", color: "bg-blue-600 hover:bg-blue-700" }
+    additionalLinks: [
+    ],
+    bibtex: `@inproceedings{arnold-kim-2025-interaction,\n    title = \"Interaction-Required Suggestions for Control, Ownership, and Awareness in Human-{AI} Co-Writing\",\n    author = \"Arnold, Kenneth C.  and\\n      Kim, Jiho\",\n    editor = \"Padmakumar, Vishakh  and\\n      Gero, Katy  and\\n      Wambsganss, Thiemo  and\\n      Sterman, Sarah  and\\n      Huang, Ting-Hao  and\\n      Zhou, David  and\\n      Chung, John\",\n    booktitle = \"Proceedings of the Fourth Workshop on Intelligent and Interactive Writing Assistants (In2Writing 2025)\",\n    month = may,\n    year = \"2025\",\n    address = \"Albuquerque, New Mexico, US\",\n    publisher = \"Association for Computational Linguistics\",\n    url = \"https://aclanthology.org/2025.in2writing-1.6/\",\n    doi = \"10.18653/v1/2025.in2writing-1.6\",\n    pages = \"62--68\",\n    ISBN = \"979-8-89176-239-8\"\n}`,
+    doi: "10.18653/v1/2025.in2writing-1.6",
+    officialUrl: "https://aclanthology.org/2025.in2writing-1.6/",
+    pages: "62--68",
+    isbn: "979-8-89176-239-8",
+    publisher: "Association for Computational Linguistics",
+    address: "Albuquerque, New Mexico, US",
+    editors: [
+      "Padmakumar, Vishakh", "Gero, Katy", "Wambsganss, Thiemo", "Sterman, Sarah", "Huang, Ting-Hao", "Zhou, David", "Chung, John"
     ]
   },
   {
@@ -27,8 +36,17 @@ const publications = [
     date: "May 4, 2025",
     tags: ["HCI", "NLP", "Undergrad"],
     description: `Writing well requires not only expressing ideas but also refining them through revision, a process facilitated by reflection. Prior research suggests that feedback delivered through dialogues, such as those in writing center tutoring sessions, can help writers reflect more thoughtfully on their work compared to static feedback. Recent advancements in multi-modal large language models (LLMs) now offer new possibilities for supporting interactive and expressive voice-based reflection in writing. In particular, we propose that LLM-generated static feedback can be repurposed as conversation starters, allowing writers to seek clarification, request examples, and ask follow-up questions, thereby fostering deeper reflection on their writing. We argue that voice-based interaction can naturally facilitate this conversational exchange, encouraging writers' engagement with higher-order concerns, facilitating iterative refinement of their reflections, and reduce cognitive load compared to text-based interactions. To investigate these effects, we propose a formative study exploring how text vs. voice input influence writers' reflection and subsequent revisions. Findings from this study will inform the design of intelligent and interactive writing tools, offering insights into how voice-based interactions with LLM-powered conversational agents can support reflection and revision.`,
-    links: [
-      { label: "📄 Paper", url: "https://arxiv.org/abs/2504.08687", color: "bg-blue-600 hover:bg-blue-700" }
+    additionalLinks: [
+    ],
+    bibtex: `@inproceedings{kim-etal-2025-voice,\n    title = \"Voice Interaction With Conversational {AI} Could Facilitate Thoughtful Reflection and Substantive Revision in Writing\",\n    author = \"Kim, Jiho  and\\n      Laban, Philippe  and\\n      Chen, Xiang  and\\n      Arnold, Kenneth C.\",\n    editor = \"Padmakumar, Vishakh  and\\n      Gero, Katy  and\\n      Wambsganss, Thiemo  and\\n      Sterman, Sarah  and\\n      Huang, Ting-Hao  and\\n      Zhou, David  and\\n      Chung, John\",\n    booktitle = \"Proceedings of the Fourth Workshop on Intelligent and Interactive Writing Assistants (In2Writing 2025)\",\n    month = may,\n    year = \"2025\",\n    address = \"Albuquerque, New Mexico, US\",\n    publisher = \"Association for Computational Linguistics\",\n    url = \"https://aclanthology.org/2025.in2writing-1.7/\",\n    doi = \"10.18653/v1/2025.in2writing-1.7\",\n    pages = \"69--73\",\n    ISBN = \"979-8-89176-239-8\"\n}`,
+    doi: "10.18653/v1/2025.in2writing-1.7",
+    officialUrl: "https://aclanthology.org/2025.in2writing-1.7/",
+    pages: "69--73",
+    isbn: "979-8-89176-239-8",
+    publisher: "Association for Computational Linguistics",
+    address: "Albuquerque, New Mexico, US",
+    editors: [
+      "Padmakumar, Vishakh", "Gero, Katy", "Wambsganss, Thiemo", "Sterman, Sarah", "Huang, Ting-Hao", "Zhou, David", "Chung, John"
     ]
   },
   {
@@ -41,8 +59,7 @@ const publications = [
     date: "March 18, 2024",
     tags: ["HCI", "NLP", "Undergrad"],
     description: `We introduce Textfocals, a UI prototype designed to investigate a human-centered approach that emphasizes the user's role in writing. Textfocals supports the writing process by providing LLM-generated summaries, questions, and advice in a sidebar, encouraging reflection and self-driven revision while maintaining full authorship.A formative user study with Textfocals showed promising evidence that this approach might help users develop underdeveloped ideas, cater to the rhetorical audience, and clarify their writing.`,
-    links: [
-      { label: "📄 Paper", url: "https://arxiv.org/abs/2403.01055", color: "bg-blue-600 hover:bg-blue-700" },
+    additionalLinks: [
       { label: "📊 Poster", url: "/pubs/haigen24/Arnold-Kim-Poster2023.pdf", color: "bg-gray-600 hover:bg-gray-700" }
     ]
   },
@@ -56,7 +73,7 @@ const publications = [
     date: "October 25, 2024",
     tags: ["HCI", "NLP", "Undergrad"],
     description: `In Summer 2024, our team of undergraduate students conducted a study on how the type of information suggested by an AI writing assistant affects writers’ cognitive engagement with the suggestion and how they appropriate that suggestion in their draft. We developed a Microsoft Word sidebar  that offered next-sentence suggestions expressed in four different ways: in addition to predictive-text-style examples they could use verbatim (e.g., by copy-and-paste), we also allowed writers to request questions that the next sentence might answer, vocabulary they might use, and rhetorical moves (such as giving examples or considering counterarguments) that their next sentence might engage with.<br><br>In a pilot study (N=8), writers found questions and rhetorical moves to be useful and friendly. Although writers chose to request examples more often, they often rejected the suggested text. Overall, they rated the Questions suggestion type as most compelling in post-task surveys, followed by Examples. These preliminary results suggest that writers welcomed AI suggestions that could not be inserted verbatim into their documents but instead required further thought. Overall, by offering intentionally-incomplete suggestions like Questions or Rhetorical Moves, AI systems might become better cognitive partners for writers, enriching thinking rather than circumventing it. This work has been presented at an internal poster fair; we are designing a follow-up experiment to build on these findings for broader publication.`,
-    links: [
+    additionalLinks: [
       { label: "📊 Poster", url: "/pubs/cognitive-engagement/poster-summer2024.pdf", color: "bg-gray-600 hover:bg-gray-700" }
     ]
   }
@@ -98,7 +115,38 @@ const publications = [
                   </div>
                   <p class="text-gray-700 mb-4" set:html={pub.description}></p>
                   <div class="flex gap-3">
-                    {pub.links.map(link => (
+                    {/* Render Paper link if available */}
+                    {pub.url && (
+                      <a
+                        href={pub.url}
+                        target="_blank"
+                        class="inline-flex items-center px-3 py-1 bg-blue-600 hover:bg-blue-700 text-white text-sm rounded transition-colors"
+                      >
+                        📄 Paper
+                      </a>
+                    )}
+                    {/* Render DOI link if available */}
+                    {pub.doi && (
+                      <a
+                        href={`https://doi.org/${pub.doi}`}
+                        target="_blank"
+                        class="inline-flex items-center px-3 py-1 bg-orange-600 hover:bg-orange-700 text-white text-sm rounded transition-colors"
+                      >
+                        DOI
+                      </a>
+                    )}
+                    {/* Render official URL if available */}
+                    {pub.officialUrl && (
+                      <a
+                        href={pub.officialUrl}
+                        target="_blank"
+                        class="inline-flex items-center px-3 py-1 bg-blue-900 hover:bg-blue-800 text-white text-sm rounded transition-colors"
+                      >
+                        Official
+                      </a>
+                    )}
+                  {/* Render additional links */}
+                    {pub.additionalLinks && pub.additionalLinks.map(link => (
                       <a href={link.url} target="_blank" class={`inline-flex items-center px-3 py-1 ${link.color} text-white text-sm rounded transition-colors`}>
                         {link.label}
                       </a>
