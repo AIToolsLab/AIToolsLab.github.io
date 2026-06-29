@@ -1,6 +1,6 @@
 ---
-import LabHeader from "../components/lab/LabHeader";
-import LabFooter from "../components/lab/LabFooter";
+import Header from "../components/lab/Header";
+import Footer from "../components/lab/Footer.astro";
 export interface Props {
   title?: string;
   metaDescription?: string;
@@ -38,7 +38,7 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site).href;
     <link rel="canonical" href={canonicalURL} />
   </head>
   <body class="overflow-x-hidden">
-    <LabHeader client:load />
+    <Header client:load />
     {prose ? (
       <main class="prose prose-lg mx-auto px-4 py-12">
         <slot />
@@ -46,7 +46,7 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site).href;
     ) : (
       <slot />
     )}
-    <LabFooter client:load />
+    <Footer />
   </body>
   <script
     src="https://kit.fontawesome.com/349ee9c857.js"

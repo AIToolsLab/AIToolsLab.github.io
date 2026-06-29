@@ -25,7 +25,7 @@ function NavList() {
 }
 
 
-export default function LabHeader() {
+export default function Header() {
   const [openNav, setOpenNav] = React.useState(false);
 
   React.useEffect(() => {

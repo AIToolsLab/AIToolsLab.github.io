@@ -45,9 +45,8 @@ Astro-based version of the Thoughtful AI Tools Lab website.
 
 ## Components
 
-- `LabHeader`: Navigation header
-- `LabHero`: Homepage hero
-- `LabFooter`: Footer
+- `Header`: Navigation header (React island)
+- `Footer`: Footer (static Astro component)
 
 
 ## Content Management

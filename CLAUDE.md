@@ -24,8 +24,10 @@ look for app/model code here.
   existing data pattern instead of hand-writing new markup blocks.
 - The page shell, SEO tags, and canonical URL live in `src/layouts/Layout.astro`.
   The canonical URL is derived from the request path — don't hardcode it.
-- Header/footer are React islands hydrated with `client:load` so they appear in
-  static HTML. Don't switch them back to `client:only`.
+- The header is a React island (it has a mobile-nav toggle) hydrated with
+  `client:load` so it appears in static HTML — don't switch it back to
+  `client:only`. The footer is a static `.astro` component (no interactivity, no
+  hydration); keep static UI static rather than making it a React island.
 - Match surrounding Tailwind utility classes; avoid introducing bespoke CSS.
 
 ## Why this file is separate from CONTRIBUTING.md / README
