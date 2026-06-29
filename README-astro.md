@@ -45,9 +45,8 @@ Astro-based version of the Thoughtful AI Tools Lab website.
 
 ## Components
 
-- `LabHeader`: Navigation header
-- `LabHero`: Homepage hero
-- `LabFooter`: Footer
+- `Header`: Navigation header (React island)
+- `Footer`: Footer (static Astro component)
 
 
 ## Content Management
@@ -67,5 +66,5 @@ Astro-based version of the Thoughtful AI Tools Lab website.
 
 ## Deployment
 
-Deploy to GitHub Pages or any static host. Output: `dist/`.
+Deployed on Cloudflare (see `wrangler.jsonc`), serving the built `dist/` directory.
 
