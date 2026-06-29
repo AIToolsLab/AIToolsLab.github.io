@@ -62,7 +62,7 @@ const avatar = (p: Person) =>
                 <div class="text-center">
                   <img src={avatar(p)} alt={p.name} class="w-24 h-24 rounded-full object-cover mx-auto mb-3" />
                   <h4 class="font-semibold text-blue-gray-900">
-                    {p.link ? (
+                    {p.link && /^https?:\/\//.test(p.link) ? (
                       <a href={p.link} target="_blank" rel="noopener noreferrer" class="hover:text-blue-500 transition-colors">{p.name}</a>
                     ) : p.name}
                   </h4>
@@ -77,7 +77,7 @@ const avatar = (p: Person) =>
                 <div class="text-center">
                   <img src={avatar(p)} alt={p.name} class="w-20 h-20 rounded-full object-cover mx-auto mb-2" />
                   <h4 class="font-medium text-blue-gray-900 text-sm">
-                    {p.link ? (
+                    {p.link && /^https?:\/\//.test(p.link) ? (
                       <a href={p.link} target="_blank" rel="noopener noreferrer" class="hover:text-blue-500 transition-colors">{p.name}</a>
                     ) : p.name}
                   </h4>
