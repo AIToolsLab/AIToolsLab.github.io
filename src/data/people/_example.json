@@ -1,0 +1,8 @@
+{
+  "name": "Your Name",
+  "photo": "/people/your_name.png",
+  "role": "Undergraduate Researcher",
+  "status": "current",
+  "order": 2,
+  "link": "https://your-website.example"
+}

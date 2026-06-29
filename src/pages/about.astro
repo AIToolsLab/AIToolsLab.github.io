@@ -1,7 +1,32 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import LabHeader from "../components/lab/LabHeader"
-import LabFooter from "../components/lab/LabFooter"
+
+interface Person {
+  name: string;
+  photo?: string;
+  role?: string;
+  status: 'current' | 'alumni';
+  order?: number;
+  link?: string;
+}
+
+// Each team member is a JSON file in src/data/people/. See that folder's
+// README.md for how to add yourself. Files starting with "_" are ignored.
+const modules = import.meta.glob<{ default: Person }>('../data/people/*.json', { eager: true });
+const people: Person[] = Object.entries(modules)
+  .filter(([path]) => !(path.split('/').pop() ?? '').startsWith('_'))
+  .map(([, mod]) => mod.default);
+
+const current = people
+  .filter((p) => p.status === 'current')
+  .sort((a, b) => (a.order ?? 999) - (b.order ?? 999) || a.name.localeCompare(b.name));
+const alumni = people
+  .filter((p) => p.status === 'alumni')
+  .sort((a, b) => a.name.localeCompare(b.name));
+
+const avatar = (p: Person) =>
+  p.photo ||
+  `https://ui-avatars.com/api/?name=${encodeURIComponent(p.name)}&background=e0e7ff&color=4338ca&size=128`;
 ---
 
 <Layout title="About" metaDescription="Learn about the Thoughtful AI Tools Lab at Calvin University">
@@ -9,18 +34,20 @@ import LabFooter from "../components/lab/LabFooter"
     <section class="px-8 py-20 mx-auto max-w-screen-xl">
       <div class="container mx-auto">
         <h1 class="text-5xl font-bold text-center mb-12 text-blue-gray-900">About Our Lab</h1>
-        
+
         <div class="max-w-4xl mx-auto">
           <div class="prose prose-lg mx-auto text-gray-700">
             <p class="text-xl leading-relaxed mb-8">
               The Thoughtful AI Tools Lab is a research group at Calvin University focused on developing AI tools to help us think and communicate <em>better</em>, not <em>faster</em>.
             </p>
-            
+
             <h2 class="text-3xl font-semibold text-blue-gray-900 mb-6">Lab Director</h2>
             <div class="flex flex-col md:flex-row items-start gap-6 mb-8">
               <img src="/people/ken_arnold.png" alt="Kenneth C. Arnold" class="w-32 h-32 rounded-full object-cover">
               <div>
-                <h3 class="text-xl font-semibold text-blue-gray-900 mb-2">Kenneth C. Arnold</h3>
+                <h3 class="text-xl font-semibold text-blue-gray-900 mb-2">
+                  <a href="https://kenarnold.org" target="_blank" rel="noopener noreferrer" class="hover:text-blue-500 transition-colors">Kenneth C. Arnold</a>
+                </h3>
                 <p class="text-lg leading-relaxed">
                   Ken Arnold is an assistant professor of computer science and data science at Calvin University and
                   leads the Thoughtful AI Tools Lab of undergraduate student researchers, developers, and designers.
@@ -28,64 +55,44 @@ import LabFooter from "../components/lab/LabFooter"
                 </p>
               </div>
             </div>
-            
-            <h2 class="text-3xl font-semibold text-blue-gray-900 mb-6">Current Team Members</h2>
-            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-8">
-              <div class="text-center">
-                <img src="/people/jason_chew.png" alt="Jason Chew" class="w-24 h-24 rounded-full object-cover mx-auto mb-3">
-                <h4 class="font-semibold text-blue-gray-900">Jason Chew</h4>
-                <p class="text-sm text-gray-600">Undergraduate Researcher</p>
-              </div>
-              <div class="text-center">
-                <img src="/people/daniel_kim.png" alt="Daniel Kim" class="w-24 h-24 rounded-full object-cover mx-auto mb-3">
-                <h4 class="font-semibold text-blue-gray-900">Daniel Kim</h4>
-                <p class="text-sm text-gray-600">Undergraduate Researcher</p>
-              </div>
-              <div class="text-center">
-                <img src="/people/jiho_kim.png" alt="Jiho Kim" class="w-24 h-24 rounded-full object-cover mx-auto mb-3">
-                <h4 class="font-semibold text-blue-gray-900">Jiho Kim</h4>
-                <p class="text-sm text-gray-600">Undergraduate Researcher</p>
-              </div>
-              <div class="text-center">
-                <img src="/people/ray_flanagan.png" alt="Ray Flanagan" class="w-24 h-24 rounded-full object-cover mx-auto mb-3">
-                <h4 class="font-semibold text-blue-gray-900">Ray Flanagan</h4>
-                <p class="text-sm text-gray-600">Undergraduate Researcher</p>
-              </div>
-              <div class="text-center">
-                <img src="/people/hannah_yoo.png" alt="Hannah Yoo" class="w-24 h-24 rounded-full object-cover mx-auto mb-3">
-                <h4 class="font-semibold text-blue-gray-900">Hannah Yoo</h4>
-                <p class="text-sm text-gray-600">Undergraduate Researcher</p>
-              </div>
-              <div class="text-center">
-                <img src="/people/daniel_kwon.png" alt="Daniel Kwon" class="w-24 h-24 rounded-full object-cover mx-auto mb-3">
-                <h4 class="font-semibold text-blue-gray-900">Daniel Kwon</h4>
-                <p class="text-sm text-gray-600">Undergraduate Researcher</p>
-              </div>
-              <div class="text-center">
-                <img src="/people/alina_sainju.jpg" alt="Alina Sainju" class="w-24 h-24 rounded-full object-cover mx-auto mb-3">
-                <h4 class="font-semibold text-blue-gray-900">Alina Sainju</h4>
-                <p class="text-sm text-gray-600">Undergraduate Researcher</p>
-              </div>
-              <div class="text-center">
-                <img src="https://ui-avatars.com/api/?name=Kyle+Houston&background=e0e7ff&color=4338ca&size=128" alt="Kyle Houston" class="w-24 h-24 rounded-full object-cover mx-auto mb-3">
-                <h4 class="font-semibold text-blue-gray-900">Kyle Houston</h4>
-                <p class="text-sm text-gray-600">Undergraduate Researcher</p>
-              </div>
-              <div class="text-center">
-                <img src="https://ui-avatars.com/api/?name=Monica+Zhang&background=dbeafe&color=1e40af&size=128" alt="Monica Zhang" class="w-24 h-24 rounded-full object-cover mx-auto mb-3">
-                <h4 class="font-semibold text-blue-gray-900">Monica Zhang</h4>
-                <p class="text-sm text-gray-600">Undergraduate Researcher</p>
-              </div>
+
+            <h2 class="text-3xl font-semibold text-blue-gray-900 mb-6">Current Team</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-8 not-prose">
+              {current.map((p) => (
+                <div class="text-center">
+                  <img src={avatar(p)} alt={p.name} class="w-24 h-24 rounded-full object-cover mx-auto mb-3" />
+                  <h4 class="font-semibold text-blue-gray-900">
+                    {p.link ? (
+                      <a href={p.link} target="_blank" rel="noopener noreferrer" class="hover:text-blue-500 transition-colors">{p.name}</a>
+                    ) : p.name}
+                  </h4>
+                  <p class="text-sm text-gray-600">{p.role ?? 'Undergraduate Researcher'}</p>
+                </div>
+              ))}
             </div>
-            
+
+            <h2 class="text-3xl font-semibold text-blue-gray-900 mb-6">Alumni</h2>
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 mb-8 not-prose">
+              {alumni.map((p) => (
+                <div class="text-center">
+                  <img src={avatar(p)} alt={p.name} class="w-20 h-20 rounded-full object-cover mx-auto mb-2" />
+                  <h4 class="font-medium text-blue-gray-900 text-sm">
+                    {p.link ? (
+                      <a href={p.link} target="_blank" rel="noopener noreferrer" class="hover:text-blue-500 transition-colors">{p.name}</a>
+                    ) : p.name}
+                  </h4>
+                </div>
+              ))}
+            </div>
+
             <h2 class="text-3xl font-semibold text-blue-gray-900 mb-6">Contact</h2>
             <p class="text-lg leading-relaxed">
-              For more information about our research or potential collaboration opportunities, 
-              please feel free to reach out through our publications or project pages.
+              For more information about our research or potential collaboration opportunities, reach out to lab director
+              <a href="https://kenarnold.org" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline">Ken Arnold</a>.
             </p>
           </div>
         </div>
       </div>
-    </section>    
+    </section>
   </main>
 </Layout>

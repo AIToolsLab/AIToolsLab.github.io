@@ -67,5 +67,5 @@ Astro-based version of the Thoughtful AI Tools Lab website.
 
 ## Deployment
 
-Deploy to GitHub Pages or any static host. Output: `dist/`.
+Deployed on Cloudflare (see `wrangler.jsonc`), serving the built `dist/` directory.
 

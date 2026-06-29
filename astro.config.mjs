@@ -4,12 +4,11 @@ import react from "@astrojs/react";
 
 // https://astro.build/config
 import tailwind from "@astrojs/tailwind";
-
-const isProd = process.env.NODE_ENV === "production";
+import sitemap from "@astrojs/sitemap";
 
 // https://astro.build/config
 export default defineConfig({
-  integrations: [react(), tailwind()],
+  integrations: [react(), tailwind(), sitemap()],
   site: "https://thoughtful-ai.com",
   base: "/",
 });

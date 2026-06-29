@@ -1,7 +1,5 @@
 ---
 import Layout from '../../../layouts/Layout.astro';
-import LabHeader from "../../../components/lab/LabHeader"
-import LabFooter from "../../../components/lab/LabFooter"
 import { Image } from 'astro:assets';
 import wordDemo from './word_demo.png';
 import gtypeUI from './Gtype_2024UI.png';
@@ -9,8 +7,6 @@ import gtypeUI from './Gtype_2024UI.png';
 
 <Layout title="AI for Writers 2024-2025" metaDescription="Detailed information about the AI for Writers 2024-2025 senior project at Calvin University">
 	<main>
-    <LabHeader client:only="react" />
-    
     <section class="px-8 py-20 mx-auto max-w-screen-xl">
       <div class="container mx-auto">
         <!-- Breadcrumb -->
@@ -204,7 +200,5 @@ import gtypeUI from './Gtype_2024UI.png';
         </div>
       </div>
     </section>
-    
-    <LabFooter client:only="react" />
   </main>
 </Layout>

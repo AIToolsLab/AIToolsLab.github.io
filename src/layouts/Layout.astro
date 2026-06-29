@@ -18,6 +18,8 @@ const frontmatter = Astro.props.frontmatter || {};
 const title = Astro.props.title || frontmatter.title;
 const metaDescription = Astro.props.metaDescription || frontmatter.description || frontmatter.metaDescription;
 const prose = typeof Astro.props.prose !== 'undefined' ? Astro.props.prose : frontmatter.prose;
+
+const canonicalURL = new URL(Astro.url.pathname, Astro.site).href;
 ---
 
 <!DOCTYPE html>
@@ -25,7 +27,7 @@ const prose = typeof Astro.props.prose !== 'undefined' ? Astro.props.prose : fro
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
-    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <link
       href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700|Noto+Sans:300,400,500,600,700,800|PT+Mono:300,400,500,600,700"
       rel="stylesheet"
@@ -33,11 +35,10 @@ const prose = typeof Astro.props.prose !== 'undefined' ? Astro.props.prose : fro
     <title>{title} - Thoughtful AI Tools Lab</title>
     <meta name="description" content={metaDescription || "AI research group at Calvin University focused on how AI can help people think better"} />
     <meta name="generator" content={Astro.generator} />
-    <link rel="canonical" href="https://thoughtful-ai.com/" />
-    <!-- Remove Google Tag Manager for lab site -->
+    <link rel="canonical" href={canonicalURL} />
   </head>
   <body class="overflow-x-hidden">
-    <LabHeader client:only="react" />
+    <LabHeader client:load />
     {prose ? (
       <main class="prose prose-lg mx-auto px-4 py-12">
         <slot />
@@ -45,7 +46,7 @@ const prose = typeof Astro.props.prose !== 'undefined' ? Astro.props.prose : fro
     ) : (
       <slot />
     )}
-    <LabFooter client:only="react" />
+    <LabFooter client:load />
   </body>
   <script
     src="https://kit.fontawesome.com/349ee9c857.js"
