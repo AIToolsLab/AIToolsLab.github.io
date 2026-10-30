@@ -3,6 +3,7 @@ import Layout from '../layouts/Layout.astro';
 
 import { Image } from 'astro:assets';
 import wordDemo from './projects/ai-writers-2024-25/word_demo.png';
+import { mindmap } from '../data/mindmap';
 
 ---
 
@@ -24,10 +25,10 @@ import wordDemo from './projects/ai-writers-2024-25/word_demo.png';
             <p class="mx-auto mt-8 mb-12 w-full px-8 text-lg text-gray-700 lg:w-full lg:px-0">
               We build AI tools to support sustained goal-directed cognitive effort despite unclear goals and complex situations.
             </p>
-            <div class="flex flex-col items-center gap-4 lg:flex-row lg:justify-start">
+            <div class="flex flex-col items-center gap-4 lg:flex-row lg:flex-wrap lg:justify-start">
               <a
                 href="https://app.thoughtful-ai.com/"
-                class="w-full lg:w-auto inline-block px-6 py-3 text-base font-medium text-white bg-blue-500 rounded-lg shadow-md hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-opacity-75 text-center transition"
+                class="w-full lg:w-auto inline-block whitespace-nowrap px-6 py-3 text-base font-medium text-white bg-blue-500 rounded-lg shadow-md hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-opacity-75 text-center transition"
                 role="button"
                 tabindex={0}
                 target="_blank"
@@ -35,9 +36,29 @@ import wordDemo from './projects/ai-writers-2024-25/word_demo.png';
               >
                 Try Our App
               </a>
+              {mindmap.enabled ? (
+                <a
+                  href={mindmap.url}
+                  class="w-full lg:w-auto inline-block whitespace-nowrap px-6 py-3 text-base font-medium text-blue-500 border border-blue-500 rounded-lg shadow-md hover:bg-blue-50 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-opacity-75 text-center transition"
+                  role="button"
+                  tabindex={0}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Try Mindmap
+                </a>
+              ) : (
+                <span
+                  class="w-full lg:w-auto inline-block whitespace-nowrap px-6 py-3 text-base font-medium text-gray-400 border border-gray-300 bg-gray-50 rounded-lg text-center cursor-not-allowed select-none"
+                  role="button"
+                  aria-disabled="true"
+                >
+                  Try Mindmap
+                </span>
+              )}
               <a
                 href="/projects"
-                class="w-full lg:w-auto inline-block px-6 py-3 text-base font-medium text-blue-500 border border-blue-500 rounded-lg shadow-md hover:bg-blue-50 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-opacity-75 text-center transition"
+                class="w-full lg:w-auto inline-block whitespace-nowrap px-6 py-3 text-base font-medium text-blue-500 border border-blue-500 rounded-lg shadow-md hover:bg-blue-50 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-opacity-75 text-center transition"
                 role="button"
                 tabindex={0}
               >
@@ -45,7 +66,7 @@ import wordDemo from './projects/ai-writers-2024-25/word_demo.png';
               </a>
               <a
                 href="/publications"
-                class="w-full lg:w-auto inline-block px-6 py-3 text-base font-medium text-blue-500 border border-blue-500 rounded-lg shadow-md hover:bg-blue-50 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-opacity-75 text-center transition"
+                class="w-full lg:w-auto inline-block whitespace-nowrap px-6 py-3 text-base font-medium text-blue-500 border border-blue-500 rounded-lg shadow-md hover:bg-blue-50 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-opacity-75 text-center transition"
                 role="button"
                 tabindex={0}
               >
