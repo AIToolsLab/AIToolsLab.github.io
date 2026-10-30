@@ -1,7 +1,7 @@
 // Mindmap's "Try Mindmap" buttons (home page and the Projects card) read this.
-// While `enabled` is false they render as disabled, non-link buttons; set it to
-// true to make both link to the live app.
+// `enabled: true` links both to the live app; set it to false to show them as
+// disabled, non-link buttons instead.
 export const mindmap = {
   url: 'https://mindmap.thoughtful-ai.com/',
-  enabled: false,
+  enabled: true,
 } as const;
